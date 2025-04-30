@@ -17,11 +17,13 @@
     </aside>
 
     <main>
+        <!-- Inicio -->
         <section id="inicio">
             <h1>Hola que tal👋 Soy Acosta Ramón Agustín</h1>
             <p>Bienvenido a mi portfolio. Aquí encontrarás información sobre mí, mis proyectos y cómo contactarme.</p>
         </section>
 
+        <!-- Sobre mi -->
         <section id="sobre-mi">
             <h2>Sobre mí</h2>
             <img src="Img/imagen.jpeg" alt="Foto de Ramón Agustín Acosta" id="foto-perfil">
@@ -36,27 +38,67 @@
 
         </section>
 
-        <section id="proyectos" class="proyectos">
-            <h2>Proyectos</h2>
-            <div class="card">
-                <h3>Gestor de Turnos</h3>
-                <p>Aplicación de escritorio con WinForms y SQL Server para profesionales como dentistas y kinesiólogos.</p>
-            </div>
-            <div class="card">
-                <h3>Catálogo de Artículos</h3>
-                <p>WinForm con ADO.NET, filtros y búsquedas conectadas a base de datos.</p>
+        <!-- Proyectos -->
+        <section id="proyectos" class="proyectos container my-5">
+            <h2 class="text-center mb-4">Proyectos</h2>
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-md-4 mb-4">
+                    <div class="card" style="width: 100%;">
+                        <img src="Img/ArticuloApp.png" class="card-img-top" alt="ArticuloApp">
+                        <div class="card-body">
+                            <h5 class="card-title">Articulo.App</h5>
+                            <p class="card-text">[C#] .Net framework, Winforms, Validaciones, SqlServer (añadir, modificar y eliminar)</p>
+                            <a href="https://github.com/jxagus/Articulo.App" class="btn btn-primary">Código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-4">
+                    <div class="card" style="width: 100%;">
+                        <img src="Img/ArticuloWeb.png" class="card-img-top" alt="ArticuloWeb">
+                        <div class="card-body">
+                            <h5 class="card-title">Articulo.Web</h5>
+                            <p class="card-text">[C#] .Net framework, Winforms, Validaciones, SqlServer (añadir, modificar y eliminar)</p>
+                            <a href="https://github.com/jxagus/ArticulosWeb" class="btn btn-primary">Código</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 mb-4">
+                    <div class="card" style="width: 100%;">
+                        <img src="Img/PokeApp.png" class="card-img-top" alt="PokeApp">
+                        <div class="card-body">
+                            <h5 class="card-title">PokeApp</h5>
+                            <p class="card-text">[C#] .Net framework, Winforms, Validaciones, SqlServer (añadir, modificar y eliminar)</p>
+                            <a href="https://github.com/jxagus/Pokemon-Ado.net" class="btn btn-primary">Código</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Otros proyectos -->
+
             </div>
         </section>
 
+        <!-- certificados -->
         <section id="certificados">
             <h2>Certificados</h2>
             <p>Certificaciones obtenidas en UTN y MaxiPrograma sobre desarrollo con C# y .NET.</p>
         </section>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Podés escribirme a: <a href="mailto:ramonacosta@example.com">ramonacosta@example.com</a></p>
-            <a class="btn" href="https://www.linkedin.com/in/ram%C3%B3n-agust%C3%ADn-acosta-b37771250/" target="_blank">Ver LinkedIn</a>
+        <section class="contacto">
+            <h1>Contáctame</h1>
+            <p>¿Tienes alguna pregunta o propuesta? ¡Házmela saber!</p>
+            <form action="#" method="post">
+                <div class="formulario-grupo">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="formulario-grupo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar mensaje</button>
+            </form>
         </section>
     </main>
 

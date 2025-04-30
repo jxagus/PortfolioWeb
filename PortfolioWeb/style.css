@@ -33,6 +33,7 @@ aside {
     border-radius: 8px;
 }
 
+
 aside a {
     color: #f8fafc;
     text-decoration: none;
@@ -85,7 +86,15 @@ h1, h2 {
     float: left; /* Hace que la imagen flote a la izquierda */
 }
 
-
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.card {
+    overflow: hidden;
+    max-width: 100%;
+}
 
 .proyectos .card {
     background: #1e293b;
@@ -107,3 +116,43 @@ h1, h2 {
     cursor: pointer;
     text-decoration: none;
 }
+/* contacto */
+.contacto {
+    max-width: 600px;
+    margin: auto;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.01);
+    border-radius: 12px;
+}
+
+.contacto p {
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+.formulario-grupo {
+    margin-bottom: 20px;
+}
+
+    .formulario-grupo label {
+        display: block;
+        margin-bottom: 6px;
+        font-weight: bold;
+    }
+
+    .formulario-grupo input,
+    .formulario-grupo textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1em;
+        background: #fdfdfd;
+        transition: border-color 0.3s ease;
+    }
+
+        .formulario-grupo input:focus,
+        .formulario-grupo textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
