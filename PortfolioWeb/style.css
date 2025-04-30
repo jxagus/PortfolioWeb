@@ -1,0 +1,109 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+    background: #0f172a;
+    color: #f8fafc;
+    display: flex;
+}
+
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100vh;
+    background: #1e293b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+aside a {
+    color: #f8fafc;
+    text-decoration: none;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+    aside a:hover {
+        color: #38bdf8;
+    }
+
+main {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+}
+
+section {
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+    section.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+h1, h2 {
+    color: #38bdf8;
+    margin-bottom: 1rem;
+}
+
+#foto-perfil {
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    border: 5px solid transparent;
+    border-image: linear-gradient(45deg, #38bdf8, #0f172a) 1; /* Borde con gradiente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    float: left; /* Hace que la imagen flote a la izquierda */
+}
+
+
+
+.proyectos .card {
+    background: #1e293b;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #38bdf8;
+    color: #0f172a;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
